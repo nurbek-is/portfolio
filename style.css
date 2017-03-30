@@ -1,0 +1,20 @@
+body {
+  background: max.jpg;
+}
+/*#bgimg {
+  z-index: 2;
+}*/
+#profilephoto {
+  position: absolute;
+  width: 440px;
+  height:440px;
+  top:100px;
+  right: 100px;
+}
+  /*margin-left: -(X/2)px;
+  margin-top: -(Y/2)px;
+  z-index: 1;*/
+
+  /*width: 0px auto;
+  border-radius: 30px;
+  }
