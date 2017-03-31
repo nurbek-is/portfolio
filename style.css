@@ -3,8 +3,6 @@ body {
   /*background: max.jpg;*/
 
 }
-
-
 #main {
   display: flex;
   flex-direction: row;
@@ -27,8 +25,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .projectClass {
+  width: 10 em;
+  height: 2.5em;
+  background-color: red;
+  border-radius: 20%;
 
 }
