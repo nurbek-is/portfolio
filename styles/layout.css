@@ -1,32 +1,34 @@
 @media screen and (max-width:959px) {
-  #main {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+#main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  }
+#projectSection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+   }
 }
-
 #profilephoto {
   width:70%;
 }
 #introtext {
-width:30%;
+  width:30%;
 }
-
+#project1 ,#project2,#project3,#project4 {
+  width:15%;
+}
 /*this line below will stack it up for smaller screens, because 100+100=200% is bigger then container 100%*/
 
 @media screen and (max-width:640px) {
-
-  #profilephoto {
-    width: 100%;
-  }
-  #introtext {
-      width: 100%;
-  }
+#profilephoto {
+  width: 100%;
 }
-@media screen and (max-width:959px) {
-  #projectSection {
+#introtext {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+}
+#project1 ,#project2,#project3,#project4 {
+  width:80%;
   }
 }
