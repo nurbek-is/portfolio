@@ -3,7 +3,7 @@ var allProjectString = [];
 
 function Project (opts) {
   this.title = opts.title;
-  this.author = opts.author;
+  this.language = opts.language;
   this.category = opts.category;
   this.gitHubUrl = opts.gitHubUrl;
   this.body = opts.body;
@@ -15,22 +15,24 @@ $(document).ready(function(){
 });
 
 Project.prototype.toHtml = function () {
-  var $newProject = $(".projectClass").clone().appendTo(".projectClassSection");
-  // var $newProject = $("#projectSection").clone().apendTo("body");
-
-  // $('article.projectClass').clone();
-  // $newProject.data('category', this.category);
- $newProject.find('p').text(this.title);
-   return $newProject;
+  //  var $newProject = $(".projectClass").clone().appendTo(".projectClassSection");
+  //  $newProject.data('category', this.category);
+  // $newProject.find('h1').text(this.title);
+  // $newProject.find('p').text(this.body);
+ //   return $newProject;
 };
 sourceProjects.forEach(function(project) {
   new Project(project).toHtml();
   allProjects.push(project);
 });
 
+
 for (var i = 0; i < allProjects.length; i++){
-  var projectStr = allProjects[i].title + ", " + "<br>" +  allProjects[i].author + ", " + "<br>" +
-  allProjects[i].category + ", " + "<br>" + allProjects[i].gitHubUrl;
+
+ $(".projectClass").clone().appendTo(".projectClassSection");
+
+  var projectStr = allProjects[i].title + ", " + "<br>" +  allProjects[i].language + ", " + "<br>" +
+  allProjects[i].category + ", " + "<br>" + allProjects[i].gitHubUrl + "<br>";
   console.log (projectStr)
-  $('#divResults').html(projectStr);
+   $('.projectClassSection').append(projectStr);
 };
