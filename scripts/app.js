@@ -10,17 +10,18 @@ function Project (opts) {
   this.publishedOn = opts.publishedOn;
 }
 $(document).ready(function(){
-  $(".projectClass").clone().appendTo(".projectClassSection");
-  $(".projectClass").clone().appendTo(".projectClassSection");
+  // $(".projectClass").clone().appendTo(".projectClassSection");
+  // $(".projectClass").clone().appendTo(".projectClassSection");
 });
 
 Project.prototype.toHtml = function () {
+  var $newProject = $(".projectClass").clone().appendTo(".projectClassSection");
   // var $newProject = $("#projectSection").clone().apendTo("body");
 
   // $('article.projectClass').clone();
   // $newProject.data('category', this.category);
-  // $newProject.find('h1').text(this.title);
-  // return $newProject;
+ $newProject.find('p').text(this.title);
+   return $newProject;
 };
 sourceProjects.forEach(function(project) {
   new Project(project).toHtml();
