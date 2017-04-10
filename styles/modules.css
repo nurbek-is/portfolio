@@ -26,8 +26,11 @@
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
-  height: 2em;
+  height: 7em;
 }
-.projectClassSection {
+.icon-share2:before {
+  content: "\ea82";
+}
+/*.projectClassSection {
   display: none;
-}
+}*/
