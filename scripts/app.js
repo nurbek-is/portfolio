@@ -1,5 +1,4 @@
 var allProjects = [];
-var allProjectString = [];
 
 function Project (opts) {
   this.title = opts.title;
@@ -10,29 +9,40 @@ function Project (opts) {
   this.publishedOn = opts.publishedOn;
 }
 $(document).ready(function(){
+  // var $newProject = $(".projectClass").clone().appendTo(".projectClassSection");
   // $(".projectClass").clone().appendTo(".projectClassSection");
   // $(".projectClass").clone().appendTo(".projectClassSection");
+
+  var projectStr = "";
+  for (var i = 0; i < allProjects.length; i++){
+    projectStr += "<article id='project1' class='projectClass'>" + allProjects[i].title + ", " + "<br>" +  allProjects[i].language + ", " + "<br>" +
+    allProjects[i].category + ", " + "<br>" + allProjects[i].gitHubUrl + "<br>" + "<" + '/' + 'article' + ">";
+    $(".projectClassSection").append(projectStr);
+    projectStr = "";
+    }
+
+
+  //  $(".projectClass").clone().appendTo(".projectClassSection");
+  // $(".projectClass").appendTo(".projectClassSection");
+  //   var projectStr = allProjects[i].title + ", " + "<br>" +  allProjects[i].language + ", " + "<br>" +
+  //   allProjects[i].category + ", " + "<br>" + allProjects[i].gitHubUrl + "<br>";
+  //   console.log (projectStr)
+  //   //  $('.projectClassSection').append(projectStr);
+  //    $("projectStr").html(".projectClassSection");
+  // };
 });
 
 Project.prototype.toHtml = function () {
-  //  var $newProject = $(".projectClass").clone().appendTo(".projectClassSection");
-  //  $newProject.data('category', this.category);
-  // $newProject.find('h1').text(this.title);
-  // $newProject.find('p').text(this.body);
- //   return $newProject;
+  //   var $newProject = $(".projectClass").clone();
+  //   $('section.projectClassSection').removeClass("projectClassSection");
+   //
+  //  $newProject.find('h1').text(this.title);
+  //  $newProject.find('section.article-body').text(this.body);
+  //  return $newProject;
 };
 sourceProjects.forEach(function(project) {
-  new Project(project).toHtml();
-  allProjects.push(project);
+  allProjects.push(new Project(project));
 });
-
-
-for (var i = 0; i < allProjects.length; i++){
-
- $(".projectClass").clone().appendTo(".projectClassSection");
-
-  var projectStr = allProjects[i].title + ", " + "<br>" +  allProjects[i].language + ", " + "<br>" +
-  allProjects[i].category + ", " + "<br>" + allProjects[i].gitHubUrl + "<br>";
-  console.log (projectStr)
-   $('.projectClassSection').append(projectStr);
-};
+allProjects.forEach(function(a) {
+  $(".projectClassSection").append(a.toHtml());
+});
