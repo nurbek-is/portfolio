@@ -12,8 +12,10 @@ $(document).ready(function(){
   // var $newProject = $(".projectClass").clone().appendTo(".projectClassSection");
   var projectStr = "";
   for (var i = 0; i < allProjects.length; i++){
-    projectStr += "<article id='project1' class='projectClass'>" + allProjects[i].title + "<br>" +  allProjects[i].language + ", " + "<br>" +
-    allProjects[i].category + '<br>' + allProjects[i].publishedOn + "<br>" + ", " + "<br>" + allProjects[i].gitHubUrl + "<br>" + "<" + '/' + 'article' + ">" + "<br>";
+    projectStr += "<article id='project1' class='projectClass'>" + allProjects[i].title + "<br>"
+    +  allProjects[i].language + ", " + "<br>" +
+    allProjects[i].category + '<br>' + allProjects[i].publishedOn + "<br>" + ", " + "<br>"
+    + allProjects[i].gitHubUrl + allProjects[i].body + "<br>" + "<" + '/' + 'article' + ">" + "<br>";
     $(".projectClassSection").append(projectStr);
     projectStr = "";
   }
