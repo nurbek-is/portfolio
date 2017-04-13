@@ -1,7 +1,7 @@
 var sourceProjects = [
   {
     title:       'PluginStreet',
-    language:    'Javascript&jQuery',
+    language:    'jQuery&FireBase',
     category:    'Transportation',
     gitHubUrl:   'https://github.com/nurbek82/pluginstreet',
     publishedOn: '2017-03-14',

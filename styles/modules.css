@@ -20,13 +20,13 @@
   justify-content:  space-around;
   flex-wrap: wrap;
 }
-#project1 ,#project2,#project3,#project4 {
+article {
   background-color: #990033;
   border-radius: 9%;
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
-  height: 7em;
+  /*height: 7em;*/
 }
 .social-icons {
   display: flex;
