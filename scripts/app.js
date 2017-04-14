@@ -26,14 +26,14 @@ allProjects.forEach(function(p) {
   $('.projectClassSection').append(p.toHtml());
 });
 
-// var projectView = {};
-//
-// projectView.populateFilters = function() {
-//   $('section.projectClassSection').each(function() {
-//     var titleName, category, optionTag;
-//     titleName = allProjects[i].title
-//     console.log(titleName)
-//     // $(this).find('address a').text();
-// });
-// };
-// projectView.populateFilters();
+var projectView = {};
+
+projectView.populateFilters = function() {
+  $('section.projectClassSection').each(function() {
+    var titleName, category, optionTag;
+    titleName = newProject.title
+    alert(titleName)
+    // $(this).find('address a').text();
+});
+};
+projectView.populateFilters();

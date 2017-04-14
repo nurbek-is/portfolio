@@ -30,4 +30,12 @@ var sourceProjects = [
     gitHubUrl:   'https://github.com/nurbek82/stokpal',
     publishedOn: '2016-10-05',
     body:        '<p>Bacon ipsum dolor amet do ex andouille minim, kielbasa consectetur t-bone. Ullamco alcatra deserunt, occaecat sed drumstick prosciutto. Cupim sed ullamco cow ham hock turkey pariatur. Officia landjaeger minim, tenderloin salami ribeye cupidatat. Consequat reprehenderit shank nostrud proident shoulder mollit flank. Excepteur quis occaecat kevin officia, ribeye sausage chuck et pig.</p>'
+  },
+  {
+    title:       'Chocolate Pizza',
+    language:    'HTML,CSS',
+    category:    'Design',
+    gitHubUrl:   'https://github.com/nurbek82/chocolate-pizza',
+    publishedOn: '2016-05-14',
+    body:        '<p>Bacon ipsum dolor amet do ex andouille minim, kielbasa consectetur t-bone. Ullamco alcatra deserunt, occaecat sed drumstick prosciutto. Cupim sed ullamco cow ham hock turkey pariatur. Officia landjaeger minim, tenderloin salami ribeye cupidatat. Consequat reprehenderit shank nostrud proident shoulder mollit flank. Excepteur quis occaecat kevin officia, ribeye sausage chuck et pig.</p>'
   }]
