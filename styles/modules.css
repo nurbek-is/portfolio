@@ -34,6 +34,6 @@ article {
   justify-content: space-between;
   margin: 1%;
 }
-/*.projectClassSection {
+.article-class {
   display: none;
-}*/
+}

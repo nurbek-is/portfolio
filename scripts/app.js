@@ -11,7 +11,6 @@ function Project (opts) {
 Project.prototype.toHtml = function () {
   var $newProject = $('article.article-class').clone();
   $newProject.removeClass('article-class');
-  $newProject.addClass('project1');
   $newProject.find('h1').html(this.title);
   $newProject.find('h2').html(this.language);
   $newProject.data('category', this.category);

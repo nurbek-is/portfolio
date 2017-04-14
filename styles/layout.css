@@ -16,8 +16,8 @@
 #introtext {
   width:30%;
 }
-#project1 ,#project2,#project3,#project4 {
-  width:23%;
+article {
+  width:24%;
 }
 /*this line below will stack it up for smaller screens, because 100+100=200% is bigger then container 100%*/
 
