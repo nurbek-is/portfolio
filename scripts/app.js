@@ -19,12 +19,22 @@ Project.prototype.toHtml = function () {
   $newProject.find('section.body-class').html(this.body);
    return $newProject;
 };
-sourceProjects.forEach(function(project) {
-  allProjects.push(new Project(project));
+
+$(function(){
+  $.ajax({
+    url: '/scripts/data.json',
+    dataType : "json",
+  }).done(function(data) {
+    data.forEach(function(project) {
+      allProjects.push(new Project(project));
+    });
+    allProjects.forEach(function(p) {
+      $('.projectClassSection').append(p.toHtml());
+    });
+  })
 });
-allProjects.forEach(function(p) {
-  $('.projectClassSection').append(p.toHtml());
-});
+
+
 
 var projectView = {};
 
