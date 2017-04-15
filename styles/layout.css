@@ -11,10 +11,35 @@
    }
 }
 #profilephoto {
+  margin-top: 8%;
   width:70%;
 }
 #introtext {
-  width:30%;
+  width:34%;
+}
+.header{
+  display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: flex-start;
+   align-items: center;
+}
+.social-icons{
+  display: inline;
+}
+.title{
+  font-size: 3em;
+  padding: 4%;
+  margin: 0;
+  margin-top: 3%;
+  content: 442px;
+  background-color: rgba(255, 245, 0, 0.8);
+  background-image: url('../assets/Kurdish_flag_(Khoiboun).png');
+  background-size: cover;
+  border-radius: 10px;
+  border-style: dashed;
+  border-width: 3px;
 }
 article {
   width:24%;

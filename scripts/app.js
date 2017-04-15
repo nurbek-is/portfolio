@@ -15,6 +15,7 @@ Project.prototype.toHtml = function () {
   $newProject.find('h2').html(this.language);
   $newProject.data('category', this.category);
   $newProject.find('a.atag').attr('href',this.gitHubUrl);
+  $newProject.find('iframe').attr('src',this.gitHubUrl);
   $newProject.find('a.atag').text(this.gitHubUrl);
   $newProject.find('section.body-class').html(this.body);
    return $newProject;
