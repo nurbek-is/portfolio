@@ -17,7 +17,7 @@
   width:30%;
 }
 article {
-  width:24%;
+  width:23%;
 }
 /*this line below will stack it up for smaller screens, because 100+100=200% is bigger then container 100%*/
 

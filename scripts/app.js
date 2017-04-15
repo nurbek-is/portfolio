@@ -17,6 +17,7 @@ Project.prototype.toHtml = function () {
   $newProject.find('a.atag').attr('href',this.gitHubUrl);
   $newProject.find('a.atag').text(this.gitHubUrl);
   $newProject.find('section.body-class').html(this.body);
+  $newProject.find('time.time-class').html(this.publishedOn);
    return $newProject;
 };
 sourceProjects.forEach(function(project) {
@@ -33,7 +34,6 @@ projectView.populateFilters = function() {
     var titleName, category, optionTag;
     titleName = newProject.title
     alert(titleName)
-    // $(this).find('address a').text();
-});
+  });
 };
 projectView.populateFilters();
