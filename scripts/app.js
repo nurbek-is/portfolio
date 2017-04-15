@@ -15,17 +15,28 @@ Project.prototype.toHtml = function () {
   $newProject.find('h2').html(this.language);
   $newProject.data('category', this.category);
   $newProject.find('a.atag').attr('href',this.gitHubUrl);
+  $newProject.find('iframe').attr('src',this.gitHubUrl);
   $newProject.find('a.atag').text(this.gitHubUrl);
   $newProject.find('section.body-class').html(this.body);
   $newProject.find('time.time-class').html(this.publishedOn);
    return $newProject;
 };
-sourceProjects.forEach(function(project) {
-  allProjects.push(new Project(project));
+
+$(function(){
+  $.ajax({
+    url: '/scripts/data.json',
+    dataType : "json",
+  }).done(function(data) {
+    data.forEach(function(project) {
+      allProjects.push(new Project(project));
+    });
+    allProjects.forEach(function(p) {
+      $('.projectClassSection').append(p.toHtml());
+    });
+  })
 });
-allProjects.forEach(function(p) {
-  $('.projectClassSection').append(p.toHtml());
-});
+
+
 
 var projectView = {};
 

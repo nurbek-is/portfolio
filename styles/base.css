@@ -1,3 +1,20 @@
 body {
   background-color: #4747d1;
+  background-image: url('../assets/Wavebg.jpg');
+}
+h1{
+  font-size: 2em;
+  text-align: center;
+}
+p {
+  margin: 3%;
+}
+
+header{
+  background-image: url('../assets/bettersand.jpg');
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+  width: 100%;
+  height: 25%;
 }
