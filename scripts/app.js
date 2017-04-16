@@ -15,7 +15,7 @@ Project.prototype.toHtml = function () {
   $newProject.find('h2').html(this.language);
   $newProject.attr('data-language', this.language)
   $newProject.find('h3').html(this.category);
-  $newProject.data('category', this.category);
+  $newProject.attr('data-category', this.category);
   $newProject.find('a.atag').attr('href',this.gitHubUrl);
   $newProject.find('a.atag').text(this.gitHubUrl);
   $newProject.find('section.body-class').html(this.body);

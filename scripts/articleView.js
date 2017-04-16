@@ -19,10 +19,27 @@ projectView.handleLanguageFilter = function () {
       console.log($(this).val());
       $('article').hide();
       var value = $(this).val();
-      console.log(value);
       $('article[data-language="' + value + '"]').fadeIn();
     }
+    else {
+      $('article:not(.article-class)').show();
+    }
+    $('#category-filter').val('');
   })
-}
+};
+projectView.handleCategoryFilter = function () {
+  $('#category-filter').on('change', function () {
+    if($(this).val())  {
+      $('article').hide();
+      var value = $(this).val();
+      $('article[data-category="' + value + '"]').fadeIn();
+    }
+    else {
+      $('article:not(.article-class)').show();
+    }
+    $('#language-filter').val('');
+  })
+};
 projectView.populateFilters();
 projectView.handleLanguageFilter();
+projectView.handleCategoryFilter();
