@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="styles/layout.css">
   </head>
   <body>
+
+    <header>
+        <ul>
+          <li>
+            <select id="language-filter">
+            <option value="">--Filter By Language-- </option>
+            </select>
+          </li>
+          <li>
+            <select id="category-filter">
+              <option value="">--Filter by Category--</option>
+            </select>
+          </li>
+        </ul>
+    </header>
+
     <div class="social-icons">
       <span class="icon-share2"></span>
       <span class="icon-twitter"></span>
@@ -25,14 +41,14 @@
       </aside>
 
     </main>
-    <section id ="projectSection" class= "projectClassSection" data-category="category">
+    <section id ="projectSection" class= "projectClassSection" data-category="placeholder category">
       <article class="article-class">
-        <h1></h1>
-        <h2></h2>
-        <a class="atag" href="#"></a>
-        <h3></h3>
-        <section class="body-class"></section>
-        <time class="time-class"></time>
+        <h1>Article</h1>
+        <h2>Language</h2>
+        <h3>Category</h3>
+        <a class="atag" href="#">URL</a>
+        <section class="body-class">Text Body</section>
+        <time class="time-class">Time </time>
       </article>
     </section>
 
@@ -42,5 +58,6 @@
     crossorigin="anonymous"></script>
     <script src="scripts/data.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
+    <script src="scripts/articleView.js" type="text/javascript"></script>
   </body>
   </html>

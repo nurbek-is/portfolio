@@ -35,10 +35,16 @@ article {
   justify-content:center;
   margin-left: 2%;
   position: fixed;
+  margin-top: 3%;
 }
 .article-class {
   display: none;
 }
 span {
   margin: 20%;
+
+}
+header {
+ margin-top: 1.5%;
+ margin-left: 1.5%;
 }
