@@ -13,6 +13,8 @@ Project.prototype.toHtml = function () {
   $newProject.removeClass('article-class');
   $newProject.find('h1').html(this.title);
   $newProject.find('h2').html(this.language);
+  $newProject.attr('data-language', this.language)
+  $newProject.find('h3').html(this.category);
   $newProject.data('category', this.category);
   $newProject.find('a.atag').attr('href',this.gitHubUrl);
   $newProject.find('a.atag').text(this.gitHubUrl);
@@ -26,14 +28,3 @@ sourceProjects.forEach(function(project) {
 allProjects.forEach(function(p) {
   $('.projectClassSection').append(p.toHtml());
 });
-
-var projectView = {};
-
-projectView.populateFilters = function() {
-  $('section.projectClassSection').each(function() {
-    var titleName, category, optionTag;
-    titleName = newProject.title
-    alert(titleName)
-  });
-};
-projectView.populateFilters();

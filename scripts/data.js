@@ -1,7 +1,7 @@
 var sourceProjects = [
   {
     title:       'PluginStreet',
-    language:    'jQuery&FireBase',
+    language:    'FireBase',
     category:    'Transportation',
     gitHubUrl:   'https://github.com/nurbek82/pluginstreet',
     publishedOn: '2017-03-14',
@@ -17,7 +17,7 @@ var sourceProjects = [
   },
   {
     title:       'BusMall',
-    language:    'Javascript&CSS',
+    language:    'CSS',
     category:    'Marketing',
     gitHubUrl:   'https://github.com/nurbek82/bus_mall',
     publishedOn: '2016-04-14',
@@ -25,7 +25,7 @@ var sourceProjects = [
   },
   {
     title:       'StokPal',
-    language:     'Javascript',
+    language:     'html',
     category:    'Investment',
     gitHubUrl:   'https://github.com/nurbek82/stokpal',
     publishedOn: '2016-10-05',
@@ -33,7 +33,7 @@ var sourceProjects = [
   },
   {
     title:       'Chocolate Pizza',
-    language:    'HTML,CSS',
+    language:    'Java',
     category:    'Design',
     gitHubUrl:   'https://github.com/nurbek82/chocolate-pizza',
     publishedOn: '2016-05-14',
