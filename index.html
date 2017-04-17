@@ -10,37 +10,38 @@
     <link rel="stylesheet" href="styles/layout.css">
   </head>
   <body>
+    <nav id="navid">
+      <li class="navclass">Home</li>
+      <li class="navclass"><span class="icon-whatsapp"></span>WhatsUp</li>
+      <li class="navclass"><span class="icon-share2"></span>Share </li>
+      <li class="navclass"><span class="icon-facebook"></span>Facebook</li>
+      <li class="navclass"><span class="icon-twitter"></span>Twitter</li>
+    </nav>
 
-    <header>
-        <ul>
-          <li>
-            <select id="language-filter">
+    <header id="filter">
+      <ul>
+        <li>
+          <select id="language-filter">
             <option value="">--Filter By Language-- </option>
-            </select>
-          </li>
-          <li>
-            <select id="category-filter">
-              <option value="">--Filter by Category--</option>
-            </select>
-          </li>
-        </ul>
+          </select>
+        </li>
+        <li>
+          <select id="category-filter">
+            <option value="">--Filter by Category--</option>
+          </select>
+        </li>
+      </ul>
     </header>
 
-    <div class="social-icons">
-      <span class="icon-share2"></span>
-      <span class="icon-twitter"></span>
-      <span class="icon-facebook"></span>
-      <span class="icon-whatsapp"></span>
-    </div>
-    <main id="main">
-
+    <main >
+      <section id="centerSection">
       <img id="profilephoto" src="nurbhi.jpg" alt="">
       <aside id="introtext">
         <h1>Nurbek Ismailov</h1>
-        <p>BRIEF INTRO Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>A Ship in Harbor Is Safe, But that Is Not What Ships Are Built For. <br> Nurbek was born and grew up in Kyrgyzstan currently independent but former Soviet Union country, educated in US, Nurbek is currently in Full Stack Developer See below for portfolio projects he build with passion </p>
       </aside>
+      </section>
 
-    </main>
     <section id ="projectSection" class= "projectClassSection" data-category="placeholder category">
       <article class="article-class">
         <h1>Article</h1>
@@ -51,7 +52,7 @@
         <time class="time-class">Time </time>
       </article>
     </section>
-
+</main>
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -60,4 +61,5 @@
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="scripts/articleView.js" type="text/javascript"></script>
   </body>
+
   </html>

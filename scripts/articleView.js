@@ -6,9 +6,9 @@ projectView.populateFilters = function() {
     languageName = $(this).find('h2').text();
     categoryName = $(this).find('h3').text();
     optionTag = '<option value="'+ languageName + '">' + languageName + '</option>';
-     $('#language-filter').append(optionTag);
-     optionTag = '<option value="'+ categoryName + '">' + categoryName + '</option>';
-      $('#category-filter').append(optionTag)
+    $('#language-filter').append(optionTag);
+    optionTag = '<option value="'+ categoryName + '">' + categoryName + '</option>';
+    $('#category-filter').append(optionTag)
   });
 };
 
