@@ -22,7 +22,9 @@ Project.prototype.toHtml = function () {
   // $newProject.find('time.time-class').html(this.publishedOn);
   //  return $newProject;
   var $source = $('#portfolioHandlebar').html();
+  console.log($source);
   var template = Handlebars.compile($source);
+  console.log(template);
   debugger;
   return template(this);
 };

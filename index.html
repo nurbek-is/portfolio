@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
+    <script type="text/template" id="portfolioHandlebar">
+        <section id ="projectSection" class= "projectClassSection" data-category="{{placeholder category}}">
+          <article class="article-class">
+            <h1>{{article}}</h1>
+            <h2>{{language}}</h2>
+            <h3>{{category}}</h3>
+            <a class="atag" href="#">{{url}}</a>
+            <section class="body-class">{{body}}</section>
+            <time class="time-class">{{time}} </time>
+          </article>
+        </section>
+      </script>
   </head>
   <body>
     <nav id="navid">
@@ -41,18 +53,7 @@
         <p>A Ship in Harbor Is Safe, But that Is Not What Ships Are Built For. <br> Nurbek was born and grew up in Kyrgyzstan currently independent but former Soviet Union country, educated in US, Nurbek is currently in Full Stack Developer See below for portfolio projects he build with passion </p>
       </aside>
       </section>
-<script type="text/template" id="portfolioHandlebar">
-    <section id ="projectSection" class= "projectClassSection" data-category="{{placeholder category}}">
-      <article class="article-class">
-        <h1>{{article}}</h1>
-        <h2>{{language}}</h2>
-        <h3>{{category}}</h3>
-        <a class="atag" href="#">{{url}}</a>
-        <section class="body-class">{{body}}</section>
-        <time class="time-class">{{time}} </time>
-      </article>
-    </section>
-  </script>
+
 </main>
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
