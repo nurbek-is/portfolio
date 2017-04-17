@@ -41,22 +41,24 @@
         <p>A Ship in Harbor Is Safe, But that Is Not What Ships Are Built For. <br> Nurbek was born and grew up in Kyrgyzstan currently independent but former Soviet Union country, educated in US, Nurbek is currently in Full Stack Developer See below for portfolio projects he build with passion </p>
       </aside>
       </section>
-
-    <section id ="projectSection" class= "projectClassSection" data-category="placeholder category">
+<script type="text/template" id="portfolioHandlebar">
+    <section id ="projectSection" class= "projectClassSection" data-category="{{placeholder category}}">
       <article class="article-class">
-        <h1>Article</h1>
-        <h2>Language</h2>
-        <h3>Category</h3>
-        <a class="atag" href="#">URL</a>
-        <section class="body-class">Text Body</section>
-        <time class="time-class">Time </time>
+        <h1>{{article}}</h1>
+        <h2>{{language}}</h2>
+        <h3>{{category}}</h3>
+        <a class="atag" href="#">{{url}}</a>
+        <section class="body-class">{{body}}</section>
+        <time class="time-class">{{time}} </time>
       </article>
     </section>
+  </script>
 </main>
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.amd.js"></script>
     <script src="scripts/data.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="scripts/articleView.js" type="text/javascript"></script>
