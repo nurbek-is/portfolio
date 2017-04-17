@@ -1,5 +1,5 @@
 @media screen and (max-width:959px) {
-#main {
+#centerSection {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +19,7 @@
 article {
   width:23%;
 }
+
 /*this line below will stack it up for smaller screens, because 100+100=200% is bigger then container 100%*/
 
 @media screen and (max-width:640px) {

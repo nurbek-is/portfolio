@@ -1,4 +1,4 @@
-#main {
+#centerSection {
   width: 960px;
   margin: 0px auto;
   display: flex;
@@ -29,14 +29,6 @@ article {
   text-align: center;
   /*height: 7em;*/
 }
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  margin-left: 2%;
-  position: fixed;
-  margin-top: 3%;
-}
 .article-class {
   display: none;
 }
@@ -44,7 +36,19 @@ span {
   margin: 20%;
 
 }
-header {
+#filter {
  margin-top: 1.5%;
  margin-left: 1.5%;
+}
+#navid {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navclass {
+  width: 10%;
+  height: 1.5%;
+  margin: 2.5%;
+  background-color: #99ff99;
 }

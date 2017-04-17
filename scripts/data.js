@@ -17,7 +17,7 @@ var sourceProjects = [
   },
   {
     title:       'BusMall',
-    language:    'CSS',
+    language:    'Javascript',
     category:    'Marketing',
     gitHubUrl:   'https://github.com/nurbek82/bus_mall',
     publishedOn: '2016-04-14',
@@ -25,7 +25,7 @@ var sourceProjects = [
   },
   {
     title:       'StokPal',
-    language:     'html',
+    language:     'HTML',
     category:    'Investment',
     gitHubUrl:   'https://github.com/nurbek82/stokpal',
     publishedOn: '2016-10-05',
@@ -33,7 +33,7 @@ var sourceProjects = [
   },
   {
     title:       'Chocolate Pizza',
-    language:    'Java',
+    language:    'CSS',
     category:    'Design',
     gitHubUrl:   'https://github.com/nurbek82/chocolate-pizza',
     publishedOn: '2016-05-14',
