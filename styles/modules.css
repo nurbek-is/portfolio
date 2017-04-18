@@ -52,3 +52,9 @@ span {
   margin: 2.5%;
   background-color: #99ff99;
 }
+#handlebarSection {
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-around;
+  flex-wrap: wrap;
+}
