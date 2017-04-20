@@ -5,7 +5,7 @@ projectView.populateFilters = function() {
     var languageName, categoryName, optionTag;
     languageName = $(this).find('h2').text();
     categoryName = $(this).find('h3').text();
-    optionTag = '<option value="'+ languageName + '">' + languageName + '</option>';
+    `optionTag = '<option value="'+ languageName + '">' + languageName + '</option>`;
     $('#language-filter').append(optionTag);
     optionTag = '<option value="'+ categoryName + '">' + categoryName + '</option>';
     $('#category-filter').append(optionTag)
@@ -17,8 +17,9 @@ projectView.handleLanguageFilter = function () {
     if($(this).val())  {
       console.log($(this).val());
       $('article').hide();
-      var value = $(this).val();
-      $('article[data-language="' + value + '"]').fadeIn();
+      // var value = $(this).val();
+      // $('article[data-language="' + value + '"]').fadeIn();
+      $(`article[data-language="${$(this).val()}"]`).fadeIn();
     }
     else {
       $('article:not(.article-class)').show();
@@ -31,7 +32,7 @@ projectView.handleCategoryFilter = function () {
     if($(this).val())  {
       $('article').hide();
       var value = $(this).val();
-      $('article[data-category="' + value + '"]').fadeIn();
+      $(`article[data-category="${$(this).val()}"]`).fadeIn();
     }
     else {
       $('article:not(.article-class)').show();
