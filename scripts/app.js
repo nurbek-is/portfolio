@@ -15,24 +15,19 @@ Project.prototype.toHtml = function () {
   console.log(template);
   return template(this);
 };
-sourceProjects.forEach(function(project) {
-  allProjects.push(new Project(project));
-});
-allProjects.forEach(function(p) {
-  console.log('p >>>>>>',p);
-  console.log(p.toHtml());
-  $('#handlebarSection').append(p.toHtml());
-});
 
-// var $newProject = $('article.article-class').clone();
-// $newProject.removeClass('article-class');
-// $newProject.find('h1').html(this.title);
-// $newProject.find('h2').html(this.language);
-// $newProject.attr('data-language', this.language)
-// $newProject.find('h3').html(this.category);
-// $newProject.attr('data-category', this.category);
-// $newProject.find('a.atag').attr('href',this.gitHubUrl);
-// $newProject.find('a.atag').text(this.gitHubUrl);
-// $newProject.find('section.body-class').html(this.body);
-// $newProject.find('time.time-class').html(this.publishedOn);
-// return $newProject;
+$(function(){
+  $.ajax({
+    url:'/scripts/data.json',
+    dataType:'json',
+  }).done(function(data){
+    data.forEach((function (project){
+      console.log('request done: ' + Date.now());
+      allProjects.push(new Project(project));
+    }));
+    allProjects.forEach(function(p) {
+      $('#handlebarSection').append(p.toHtml());
+    });
+  })
+  console.log ('requst started:' + Date.now())
+});
