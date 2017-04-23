@@ -40,6 +40,7 @@ projectView.handleCategoryFilter = function () {
     $('#language-filter').val('');
   })
 };
+
 projectView.populateFilters();
 projectView.handleLanguageFilter();
 projectView.handleCategoryFilter();
