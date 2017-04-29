@@ -10,9 +10,9 @@ function Project (opts) {
 }
 Project.prototype.toHtml = function () {
   var $source = $('#portfolioHandlebar').html();
-  console.log($source);
+  // console.log($source);
   var template = Handlebars.compile($source);
-  console.log(template);
+  // console.log(template);
   return template(this);
 };
 

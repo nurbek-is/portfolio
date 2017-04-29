@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portoflio npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurbek82/portfolio.git"
+  },
+  "author": "Nurbek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nurbek82/portfolio/issues"
+  },
+  "homepage": "https://github.com/nurbek82/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

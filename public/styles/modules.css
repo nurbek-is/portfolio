@@ -15,11 +15,12 @@
    margin-top: 10%;
    margin-left: 3%;
 }
-#projectSection {
+.article-class {
   display: flex;
   flex-direction: row;
   justify-content:  space-around;
   flex-wrap: wrap;
+  margin: 4%;
 }
 article {
   background-color: #990033;
@@ -27,11 +28,9 @@ article {
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
-  /*height: 7em;*/
+
 }
-/*.article-class {
-  display: none;
-}*/
+
 span {
   margin: 20%;
 
