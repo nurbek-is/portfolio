@@ -39,6 +39,9 @@ projectView.handleCategoryFilter = function () {
     $('#language-filter').val('');
   })
 };
-projectView.populateFilters();
-projectView.handleLanguageFilter();
-projectView.handleCategoryFilter();
+
+articleView.initIndexPage = function() {
+  projectView.populateFilters();
+  projectView.handleLanguageFilter();
+  projectView.handleCategoryFilter();
+};
