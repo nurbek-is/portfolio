@@ -9,6 +9,8 @@ app.get('/', function (req, res){
 
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.post('.data', function (req, res) {
   req.on('data', function (data){
   console.log(data.toString());
@@ -18,6 +20,6 @@ app.post('.data', function (req, res) {
   })
 })
 
-app.listen(3000, function() {
-  console.log ('server running on port: ')
+app.listen(PORT, function(){
+  console.log(`Server started on port ${PORT}!`);
 });
