@@ -15,9 +15,9 @@ projectView.populateFilters = function() {
 projectView.handleLanguageFilter = function () {
   $('#language-filter').on('change', function () {
     if($(this).val())  {
-      console.log($(this).val());
-      $('article').hide();
+       $('article').hide();
       var value = $(this).val();
+      alert('value is' + value);
       $('article[data-language="' + value + '"]').fadeIn();
     }
     else {
@@ -30,7 +30,7 @@ projectView.handleCategoryFilter = function () {
   $('#category-filter').on('change', function () {
     if($(this).val())  {
       $('article').hide();
-      console.log($(this).val());
+      alert($(this).val());
       var value = $(this).val();
       $('article[data-category="' + value + '"]').fadeIn();
     }
