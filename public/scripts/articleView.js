@@ -30,6 +30,7 @@ projectView.handleCategoryFilter = function () {
   $('#category-filter').on('change', function () {
     if($(this).val())  {
       $('article').hide();
+      console.log($(this).val());
       var value = $(this).val();
       $('article[data-category="' + value + '"]').fadeIn();
     }
@@ -40,7 +41,7 @@ projectView.handleCategoryFilter = function () {
   })
 };
 
-articleView.initIndexPage = function() {
+projectView.initIndexPage = function() {
   projectView.populateFilters();
   projectView.handleLanguageFilter();
   projectView.handleCategoryFilter();
