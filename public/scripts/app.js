@@ -28,6 +28,7 @@ $(function(){
     allProjects.forEach(function(p) {
       $('#handlebarSection').append(p.toHtml());
     });
+    projectView.initIndexPage();
   })
   console.log ('requst started:' + Date.now())
 });
