@@ -21,9 +21,10 @@ $(function(){
     url:'/scripts/data.json',
     dataType:'json',
   }).done(function(data){
-    data.forEach((function (project){
+    data.map((function (project){
       console.log('request done: ' + Date.now());
       allProjects.push(new Project(project));
+      console.log(allProjects);
     }));
     allProjects.forEach(function(p) {
       $('#handlebarSection').append(p.toHtml());
