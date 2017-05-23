@@ -21,11 +21,11 @@ $(function(){
     url:'/scripts/data.json',
     dataType:'json',
   }).done(function(data){
-    data.forEach((function (project){
+    data.map((function (project){
       console.log('request done: ' + Date.now());
       allProjects.push(new Project(project));
     }));
-    allProjects.forEach(function(p) {
+    allProjects.map(function(p) {
       $('#handlebarSection').append(p.toHtml());
     });
     projectView.initIndexPage();
