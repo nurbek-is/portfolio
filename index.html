@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="styles/layout.css">
 
     <script type="text/template" id="portfolioHandlebar">
-      <section id="projectSection" class= "projectClassSection" ">
+      <section id="projectSection" class= "projectClassSection">
         <article class="article-class" data-language="{{language}}" data-category="{{category}}">
           <h1>{{title}}</h1>
           <h2>{{language}}</h2>
           <h3>{{category}}</h3>
           <a class="atag" href="#">{{gitHubUrl}}</a>
-          <section class="body-class">{{{body}}}</section>
+          <h4 class="body-class">{{{body}}}</h4>
           <time class="time-class">{{{publishedOn}}} </time>
         </article>
       </section>
     </script>
-
   </head>
   <body>
     <nav id="navid">
@@ -54,7 +53,7 @@
         </li>
       </ul>
     </header>
-    <main >
+  <main >
       <section id="centerSection">
       <img id="profilephoto" src="nurbhi.jpg" alt="">
       <aside id="introtext">
@@ -62,9 +61,11 @@
         <p>Any Ship in Harbor Is Safe, But that Is Not What Ships Are Built For. <br> Nurbek was born and grew up in Kyrgyzstan currently independent but former Soviet Union country, educated in US, Nurbek is currently in Full Stack Developer See below for portfolio projects he build with passion </p>
       </aside>
       </section>
-</main>
+   </main>
 
-<section id="handlebarSection" class="handlebarClassSection"></section>
+<div id="handlebarSection" class="handlebarClassSection"></div>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
