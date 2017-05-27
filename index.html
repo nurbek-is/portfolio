@@ -25,23 +25,16 @@
   <body>
     <nav id="navid">
       <li class="navclass"><a href= "/">Home</a></li>
-      <li class="navclass"><a href= "./about">Jobs</a></li>
-      <li class="navclass"><a href= "./contacts">Contact Me</a></li>
+      <li class="navclass"><a href= "/jobs">Jobs</a></li>
+      <li class="navclass"><a href= "/contacts">Contact Me</a></li>
       <li class="navclass"><span class="icon-whatsapp"></span>WhatsUp</li>
       <li class="navclass"><span class="icon-share2"></span>Share </li>
       <li class="navclass"><span class="icon-facebook"></span>Facebook</li>
       <li class="navclass"><span class="icon-twitter"></span>Twitter</li>
     </nav>
-     <!-- <ul>
-      <li></li>
-      <li><a href="/jobs">#jobs</a></li>
-      <li><a href="./contact">/contact</a></li>
-      <li><a href="./contact/me">/contact/me</a></li>
-       <li><a href="./not-found?foo=bar">/not-found</a></li>
-    </ul> -->
 
   <header id="filter">
-      <ul id="spa"></ul>
+      <ul id="spa">this is spa</ul>
       <ul>
         <li>
           <select id="language-filter">
@@ -54,14 +47,14 @@
           </select>
         </li>
       </ul>
-    </header>
+  </header>
   <main >
       <section id="centerSection">
-      <img id="profilephoto" src="nurbhi.jpg" alt="">
-      <aside id="introtext">
-        <h1>Nurbek Ismailov</h1>
-        <p>Any Ship in Harbor Is Safe, But that Is Not What Ships Are Built For. <br> Nurbek was born and grew up in Kyrgyzstan currently independent but former Soviet Union country, educated in US, Nurbek is currently in Full Stack Developer See below for portfolio projects he build with passion </p>
-      </aside>
+        <img id="profilephoto" src="nurbhi.jpg" alt="">
+          <aside id="introtext">
+            <h1>Nurbek Ismailov</h1>
+            <p>Any Ship in Harbor Is Safe, But that Is Not What Ships Are Built For. <br> Nurbek was born and grew up in Kyrgyzstan currently independent but former Soviet Union country, educated in US, Nurbek is currently in Full Stack Developer See below for portfolio projects he build with passion </p>
+          </aside>
       </section>
   </main>
 
@@ -71,14 +64,14 @@
 <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
-          <script src="/vendor/page.js"></script>
-  <!-- <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script> -->
+<script src="vendor/scripts/page.js"></script>
+<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+<script src="vendor/scripts/page.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-<script src="scripts/data.js" type="text/javascript"></script>
-<script src="scripts/app.js" type="text/javascript"></script>
-<script src="scripts/articleView.js" type="text/javascript"></script>
-<script src="/scripts/controllers/homeView.js"></script>
-<script src="/scripts/controllers/jobsView.js"></script>
-<script src="/scripts/controllers/routes.js"></script>
+<script src="scripts/model/project.js" type="text/javascript"></script>
+<script src="scripts/view/projectView.js" type="text/javascript"></script>
+<script src="scripts/controller/homeView.js"></script>
+<script src="scripts/controller/jobsView.js"></script>
+<script src="scripts/controller/routes.js"></script>
 </body>
 </html>

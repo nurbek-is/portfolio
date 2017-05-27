@@ -7,5 +7,5 @@
 // page();
 
 page ('/', homeView.init);
-page ('/about', jobsView.init);
+page ('/jobs', jobsView.init);
 page ();
