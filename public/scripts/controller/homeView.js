@@ -2,11 +2,12 @@
 
 (function(module) {
   const homeView = {};
-  console.log ('we are now in homeView. yay ')
   homeView.init = function () {
-    console.log ('Inside of homeView.init()')
-    $('#spa').text('this test showing homeView');
+    $('#spa').text('WELCOME TO HOMEVIEW');
     $('section#centerSection').show()
+    $('#handlebarSection').show()
+    $('header#filter').show();
+    $('div#jobshandlebarSection').hide();
 }
 module.homeView = homeView;
 }) (window)

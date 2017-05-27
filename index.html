@@ -21,20 +21,33 @@
         </article>
       </section>
     </script>
+
+    <script type="text/template" id="jobsHandlebar">
+      <section id="projectSection" class= "projectClassSection">
+        <article class="article-class" data-language="{{title}}" data-category="{{category}}">
+          <h1>{{company}}</h1>
+          <h2>{{title}}</h2>
+          <h3>{{category}}</h3>
+          <a class="atag" href="#">{{companyUrl}}</a>
+          <h4 class="body-class">{{{description}}}</h4>
+          <time class="time-class">{{{years}}} </time>
+        </article>
+      </section>
+    </script>
   </head>
   <body>
     <nav id="navid">
       <li class="navclass"><a href= "/">Home</a></li>
       <li class="navclass"><a href= "/jobs">Jobs</a></li>
-      <li class="navclass"><a href= "/contacts">Contact Me</a></li>
+      <li class="navclass"><a href= "/hobby">My Hobbies</a></li>
       <li class="navclass"><span class="icon-whatsapp"></span>WhatsUp</li>
       <li class="navclass"><span class="icon-share2"></span>Share </li>
       <li class="navclass"><span class="icon-facebook"></span>Facebook</li>
       <li class="navclass"><span class="icon-twitter"></span>Twitter</li>
     </nav>
 
+<ul id="spa">this is spa</ul>
   <header id="filter">
-      <ul id="spa">this is spa</ul>
       <ul>
         <li>
           <select id="language-filter">
@@ -59,6 +72,7 @@
   </main>
 
 <div id="handlebarSection" class="handlebarClassSection"></div>
+<div id="jobshandlebarSection" class="handlebarClassSection"></div>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"
@@ -68,10 +82,12 @@
 <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 <script src="vendor/scripts/page.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<script src="scripts/model/jobs.js" type="text/javascript"></script>
 <script src="scripts/model/project.js" type="text/javascript"></script>
 <script src="scripts/view/projectView.js" type="text/javascript"></script>
 <script src="scripts/controller/homeView.js"></script>
 <script src="scripts/controller/jobsView.js"></script>
+<script src="scripts/controller/hobbyView.js"></script>
 <script src="scripts/controller/routes.js"></script>
 </body>
 </html>

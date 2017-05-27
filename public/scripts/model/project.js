@@ -10,15 +10,13 @@ function Project (opts) {
 }
 Project.prototype.toHtml = function () {
   var $source = $('#portfolioHandlebar').html();
-  // console.log($source);
-  var template = Handlebars.compile($source);
-  // console.log(template);
+  var template = Handlebars.compile($source)
   return template(this);
 };
 
 $(function(){
   $.ajax({
-    url:'/scripts/data.json',
+    url:'/data/data.json',
     dataType:'json',
   }).done(function(data){
     data.map((function (project){
