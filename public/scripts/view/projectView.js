@@ -1,7 +1,7 @@
 var projectView = {};
 
 projectView.populateFilters = function() {
-  $('article').each(function() {
+  $('article').filter(function() {
     var languageName, categoryName, optionTag;
     languageName = $(this).find('h2').text();
     categoryName = $(this).find('h3').text();

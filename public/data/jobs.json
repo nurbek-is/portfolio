@@ -1,0 +1,25 @@
+[{
+		"company": "HomeStreet Bank",
+		"title": "Mortgage Analyst",
+		"category": "Banking",
+		"companyUrl": "www.homestreet.com",
+		"years": "2012-05-03- present",
+		"body": "<p>Monitoring default loans, analyzing credit risk, managing properties, liquidating non performing assets in auction,assisting debtors with loan modifcation and shortsales</p>"
+	},
+	{
+		"company": "Scheer & Zender",
+		"title": "paralegal",
+		"category": "Law Firm",
+		"companyUrl": "www.Scheer&Zender.com",
+		"years": "2010-03-03 - 2012-05-03",
+		"body": "<p>Practicing construction, real estate, insurance law, ligitation</p>"
+	},
+	{
+		"company": "Quorum Review",
+		"title": "Project manager",
+		"category": "Pharmaceutical",
+		"companyUrl": "www.quorumreview.com",
+		"years": "2007-03-03 - 2010-05-03",
+		"body": "<p>Reviewing analyzing clinical research studies</p>"
+	}
+]

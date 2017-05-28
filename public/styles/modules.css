@@ -15,12 +15,10 @@
    margin-top: 10%;
    margin-left: 3%;
 }
-.article-class {
+#handlebarSection {
   display: flex;
   flex-direction: row;
-  justify-content:  space-around;
-  flex-wrap: wrap;
-  margin: 4%;
+  justify-content: space-around;
 }
 article {
   background-color: #990033;
@@ -28,12 +26,10 @@ article {
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
-
+  height:94%;
 }
-
 span {
   margin: 20%;
-
 }
 #filter {
  margin-top: 1.5%;
